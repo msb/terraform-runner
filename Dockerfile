@@ -18,6 +18,7 @@ ADD terraform.sh /scripts/
 
 # if no backend is defined, this configures TF to store project state in `/terraform`
 ADD backend.tf /build
+
 # also store the terraform config in `/terraform`
 ENV TF_DATA_DIR=/terraform/.terraform
 
